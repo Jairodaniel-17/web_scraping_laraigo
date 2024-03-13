@@ -9,7 +9,7 @@ from typing import List, Optional, Union
 
 
 def iniciar_sesion(url_login: str, datos_login: dict) -> requests.Session:
-    """Inicia sesión en el sitio web."""
+    """Inicia sesión en el sitio web, bearer token."""
     sesion = requests.Session()
     sesion.post(url_login, data=datos_login)
     return sesion
